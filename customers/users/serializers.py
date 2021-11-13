@@ -1,0 +1,15 @@
+from django.contrib.auth.models import User, Group
+from rest_framework import serializers
+from users.models import Customer
+
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Customer
+        fields = ['url', 'user_name', 'user_email', 'password']
+
+"""
+class GroupSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Group
+        fields = ['url', 'name']
+"""
