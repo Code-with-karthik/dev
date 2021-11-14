@@ -3,3 +3,8 @@ customer@123
 
 customer1@emailtest1.com
 Harman@123
+
+{
+"user_email" : "customeradmin@emailtest.com",
+"password" : "Harman@123"
+}

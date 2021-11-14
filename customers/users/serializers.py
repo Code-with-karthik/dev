@@ -5,7 +5,7 @@ from users.models import Customer
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Customer
-        fields = ['url', 'user_name', 'user_email', 'password']
+        fields = ['url', 'user_name', 'user_email', 'password', 'first_name', 'last_name']
 
 """
 class GroupSerializer(serializers.HyperlinkedModelSerializer):

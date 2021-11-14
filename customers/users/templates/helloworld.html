@@ -1,5 +1,6 @@
 <html>
     <body>
+        {% csrf_token %}
         {{ info.user }}
         {%if info %}
         <h1>Welcome {{ info.user }}</h1>

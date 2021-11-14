@@ -6,12 +6,12 @@ class CustomUserCreationForm(UserCreationForm):
     """
     A form for creating new users. Includes all the required fields, plus a repeated password.
     """
-    password1 = forms.PasswordInput() # Custom Required Field. and other fields should go same way 
+    password1 = forms.PasswordInput()
     password2 = forms.PasswordInput()
 
     class Meta:
         model = Customer
-        fields = ('user_email', 'password1', 'password2')
+        fields = ('user_email', 'password1', 'password2', )
 
 class CustomUserChangeForm(UserChangeForm):
 
